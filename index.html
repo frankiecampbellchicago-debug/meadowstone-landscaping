@@ -55,64 +55,13 @@
 
     <!-- HERO -->
     <section class="hero" aria-label="Hero">
-      <div class="hero-bg">
-        <svg class="hero-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#1a2e1a"/>
-              <stop offset="100%" stop-color="#2d4a2d"/>
-            </linearGradient>
-            <linearGradient id="groundGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#2d4a2d"/>
-              <stop offset="100%" stop-color="#1a2e1a"/>
-            </linearGradient>
-          </defs>
-          <!-- Sky -->
-          <rect width="1440" height="900" fill="url(#skyGrad)"/>
-          <!-- Distant treeline -->
-          <ellipse cx="200" cy="620" rx="120" ry="90" fill="#1e3a1e" opacity="0.6"/>
-          <ellipse cx="320" cy="600" rx="100" ry="80" fill="#1e3a1e" opacity="0.5"/>
-          <ellipse cx="1100" cy="610" rx="130" ry="100" fill="#1e3a1e" opacity="0.5"/>
-          <ellipse cx="1280" cy="625" rx="110" ry="85" fill="#1e3a1e" opacity="0.6"/>
-          <!-- Ground plane -->
-          <path d="M0 700 Q360 640 720 660 Q1080 680 1440 640 L1440 900 L0 900 Z" fill="#1a3020" opacity="0.8"/>
-          <path d="M0 750 Q400 710 720 720 Q1040 730 1440 700 L1440 900 L0 900 Z" fill="#152a18" opacity="0.9"/>
-          <!-- Lawn highlight -->
-          <path d="M0 800 Q360 770 720 775 Q1080 780 1440 760 L1440 900 L0 900 Z" fill="#1a3020"/>
-          <!-- Stone path -->
-          <path d="M580 900 L660 720 L780 720 L860 900 Z" fill="#2a3828" opacity="0.5"/>
-          <ellipse cx="680" cy="800" rx="18" ry="8" fill="#3a4a38" opacity="0.7"/>
-          <ellipse cx="720" cy="830" rx="22" ry="9" fill="#3a4a38" opacity="0.6"/>
-          <ellipse cx="700" cy="860" rx="20" ry="8" fill="#3a4a38" opacity="0.7"/>
-          <!-- Ornamental trees -->
-          <rect x="390" y="550" width="8" height="160" fill="#1a2a1a"/>
-          <ellipse cx="394" cy="520" rx="50" ry="65" fill="#1e3a20"/>
-          <ellipse cx="394" cy="500" rx="35" ry="50" fill="#234a24"/>
-          <rect x="1020" y="560" width="8" height="150" fill="#1a2a1a"/>
-          <ellipse cx="1024" cy="530" rx="55" ry="70" fill="#1e3a20"/>
-          <ellipse cx="1024" cy="510" rx="38" ry="55" fill="#234a24"/>
-          <!-- Hedge row -->
-          <path d="M0 680 Q180 660 360 665 Q540 670 720 660 Q900 650 1080 658 Q1260 666 1440 655 L1440 710 Q1260 720 1080 712 Q900 704 720 710 Q540 716 360 712 Q180 708 0 720 Z" fill="#1a3620" opacity="0.7"/>
-          <!-- Golden hour light wash -->
-          <radialGradient id="sunGrad" cx="70%" cy="30%" r="50%">
-            <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.08"/>
-            <stop offset="100%" stop-color="#c8a96e" stop-opacity="0"/>
-          </radialGradient>
-          <rect width="1440" height="900" fill="url(#sunGrad)"/>
-          <!-- Overlay for text legibility -->
-          <linearGradient id="overlayGrad" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stop-color="#0d1a0d" stop-opacity="0.75"/>
-            <stop offset="55%" stop-color="#0d1a0d" stop-opacity="0.45"/>
-            <stop offset="100%" stop-color="#0d1a0d" stop-opacity="0.1"/>
-          </linearGradient>
-          <rect width="1440" height="900" fill="url(#overlayGrad)"/>
-        </svg>
-      </div>
+      <div class="hero-bg"></div>
 
       <div class="hero-content container">
         <div class="hero-badge">Chicagoland's Premier Landscaping Company</div>
         <h1 class="hero-title">Your Property,<br><em>Elevated.</em></h1>
         <p class="hero-subtitle">Bespoke lawn care, garden design, and outdoor living solutions for discerning homeowners across the Chicago suburbs.</p>
+        <a href="tel:+13125550180" class="hero-phone">Call us: (312) 555-0180</a>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary btn-lg">Request a Free Consultation</a>
           <a href="#services" class="btn btn-ghost btn-lg">Explore Services</a>
@@ -222,69 +171,7 @@
       <div class="container">
         <div class="about-layout">
           <div class="about-visual" aria-hidden="true">
-            <div class="about-img-frame">
-              <svg viewBox="0 0 520 620" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="aboutBg" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#1e3a20"/>
-                    <stop offset="100%" stop-color="#0d1a0d"/>
-                  </linearGradient>
-                  <linearGradient id="groundG" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#2d5230"/>
-                    <stop offset="100%" stop-color="#1a3020"/>
-                  </linearGradient>
-                </defs>
-                <rect width="520" height="620" fill="url(#aboutBg)"/>
-                <!-- Ground -->
-                <path d="M0 480 Q130 455 260 460 Q390 465 520 450 L520 620 L0 620Z" fill="url(#groundG)"/>
-                <!-- Lawn -->
-                <path d="M0 520 Q130 500 260 505 Q390 510 520 495 L520 620 L0 620Z" fill="#1e3a20"/>
-                <!-- Stone patio -->
-                <rect x="130" y="530" width="260" height="90" rx="4" fill="#2a3828" opacity="0.8"/>
-                <line x1="130" y1="560" x2="390" y2="560" stroke="#3a4a38" stroke-width="1" opacity="0.5"/>
-                <line x1="130" y1="590" x2="390" y2="590" stroke="#3a4a38" stroke-width="1" opacity="0.5"/>
-                <line x1="195" y1="530" x2="195" y2="620" stroke="#3a4a38" stroke-width="1" opacity="0.5"/>
-                <line x1="260" y1="530" x2="260" y2="620" stroke="#3a4a38" stroke-width="1" opacity="0.5"/>
-                <line x1="325" y1="530" x2="325" y2="620" stroke="#3a4a38" stroke-width="1" opacity="0.5"/>
-                <!-- House wall -->
-                <rect x="100" y="200" width="320" height="280" fill="#1a2a1a" opacity="0.6"/>
-                <rect x="100" y="200" width="320" height="6" fill="#c8a96e" opacity="0.4"/>
-                <!-- Windows -->
-                <rect x="130" y="240" width="80" height="100" rx="2" fill="#2a4030" opacity="0.8"/>
-                <rect x="220" y="240" width="80" height="100" rx="2" fill="#2a4030" opacity="0.8"/>
-                <rect x="310" y="240" width="80" height="100" rx="2" fill="#2a4030" opacity="0.8"/>
-                <line x1="170" y1="240" x2="170" y2="340" stroke="#3a5040" stroke-width="1" opacity="0.6"/>
-                <line x1="130" y1="290" x2="210" y2="290" stroke="#3a5040" stroke-width="1" opacity="0.6"/>
-                <line x1="260" y1="240" x2="260" y2="340" stroke="#3a5040" stroke-width="1" opacity="0.6"/>
-                <line x1="220" y1="290" x2="300" y2="290" stroke="#3a5040" stroke-width="1" opacity="0.6"/>
-                <line x1="350" y1="240" x2="350" y2="340" stroke="#3a5040" stroke-width="1" opacity="0.6"/>
-                <line x1="310" y1="290" x2="390" y2="290" stroke="#3a5040" stroke-width="1" opacity="0.6"/>
-                <!-- Door -->
-                <rect x="210" y="370" width="100" height="130" rx="3" fill="#1a2a1a"/>
-                <rect x="210" y="370" width="100" height="4" fill="#c8a96e" opacity="0.5"/>
-                <circle cx="300" cy="435" r="5" fill="#c8a96e" opacity="0.6"/>
-                <!-- Ornamental trees flanking door -->
-                <rect x="150" y="390" width="6" height="110" fill="#0d1a0d"/>
-                <ellipse cx="153" cy="365" rx="38" ry="50" fill="#1e3a20"/>
-                <ellipse cx="153" cy="345" rx="28" ry="38" fill="#234a24"/>
-                <rect x="360" y="400" width="6" height="100" fill="#0d1a0d"/>
-                <ellipse cx="363" cy="375" rx="38" ry="48" fill="#1e3a20"/>
-                <ellipse cx="363" cy="355" rx="28" ry="36" fill="#234a24"/>
-                <!-- Hedge border -->
-                <path d="M100 470 Q260 455 420 470 L420 490 Q260 505 100 490 Z" fill="#1e3620" opacity="0.9"/>
-                <!-- Accent light glow -->
-                <radialGradient id="glowL" cx="153" cy="365" r="60" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.12"/>
-                  <stop offset="100%" stop-color="#c8a96e" stop-opacity="0"/>
-                </radialGradient>
-                <circle cx="153" cy="365" r="60" fill="url(#glowL)"/>
-                <radialGradient id="glowR" cx="363" cy="375" r="60" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.12"/>
-                  <stop offset="100%" stop-color="#c8a96e" stop-opacity="0"/>
-                </radialGradient>
-                <circle cx="363" cy="375" r="60" fill="url(#glowR)"/>
-              </svg>
-            </div>
+            <div class="about-img-frame"></div>
             <div class="about-stat-card">
               <strong>Est. 2008</strong>
               <span>Serving Chicagoland for 15+ years</span>
@@ -335,43 +222,7 @@
         <div class="projects-grid">
           <div class="project-card project-card--large">
             <div class="project-img">
-              <svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <defs>
-                  <linearGradient id="p1bg" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#1a3020"/>
-                    <stop offset="100%" stop-color="#0d1a10"/>
-                  </linearGradient>
-                </defs>
-                <rect width="700" height="460" fill="url(#p1bg)"/>
-                <path d="M0 300 Q175 270 350 280 Q525 290 700 265 L700 460 L0 460Z" fill="#152a18"/>
-                <path d="M0 360 Q175 335 350 345 Q525 355 700 330 L700 460 L0 460Z" fill="#1a3020"/>
-                <!-- Large stone patio -->
-                <rect x="200" y="320" width="300" height="140" fill="#2a3828" opacity="0.9"/>
-                <line x1="200" y1="360" x2="500" y2="360" stroke="#3d4d3a" stroke-width="1.5"/>
-                <line x1="200" y1="400" x2="500" y2="400" stroke="#3d4d3a" stroke-width="1.5"/>
-                <line x1="275" y1="320" x2="275" y2="460" stroke="#3d4d3a" stroke-width="1.5"/>
-                <line x1="350" y1="320" x2="350" y2="460" stroke="#3d4d3a" stroke-width="1.5"/>
-                <line x1="425" y1="320" x2="425" y2="460" stroke="#3d4d3a" stroke-width="1.5"/>
-                <!-- Outdoor furniture -->
-                <rect x="270" y="340" width="160" height="50" rx="3" fill="#1e2e1e" opacity="0.8"/>
-                <rect x="260" y="330" width="20" height="60" rx="2" fill="#1e2e1e" opacity="0.7"/>
-                <rect x="420" y="330" width="20" height="60" rx="2" fill="#1e2e1e" opacity="0.7"/>
-                <!-- Trees -->
-                <rect x="90" y="220" width="7" height="120" fill="#0a1508"/>
-                <ellipse cx="94" cy="190" rx="50" ry="70" fill="#1a3a1e"/>
-                <ellipse cx="94" cy="165" rx="36" ry="52" fill="#204a24"/>
-                <rect x="590" y="230" width="7" height="110" fill="#0a1508"/>
-                <ellipse cx="594" cy="200" rx="48" ry="68" fill="#1a3a1e"/>
-                <ellipse cx="594" cy="175" rx="34" ry="50" fill="#204a24"/>
-                <!-- Garden border -->
-                <path d="M150 310 Q350 295 550 305 L560 325 Q350 315 140 330Z" fill="#1e4020" opacity="0.8"/>
-                <!-- Light glow -->
-                <radialGradient id="fireGlow" cx="350" cy="360" r="80" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.2"/>
-                  <stop offset="100%" stop-color="#c8a96e" stop-opacity="0"/>
-                </radialGradient>
-                <circle cx="350" cy="360" r="80" fill="url(#fireGlow)"/>
-              </svg>
+              <img src="project-patio.jpg" alt="Naperville estate bluestone patio with fire pit" style="width:100%;height:340px;object-fit:cover;display:block;" />
             </div>
             <div class="project-info">
               <span class="project-tag">Hardscaping</span>
@@ -382,31 +233,7 @@
 
           <div class="project-card">
             <div class="project-img">
-              <svg viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <defs>
-                  <linearGradient id="p2bg" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#1e3a20"/>
-                    <stop offset="100%" stop-color="#0d1a10"/>
-                  </linearGradient>
-                </defs>
-                <rect width="420" height="300" fill="url(#p2bg)"/>
-                <path d="M0 200 Q105 180 210 185 Q315 190 420 175 L420 300 L0 300Z" fill="#152a18"/>
-                <!-- Lawn stripes -->
-                <path d="M0 200 Q105 180 210 185 Q315 190 420 175 L420 215 Q315 230 210 225 Q105 220 0 240Z" fill="#1a3a1e" opacity="0.5"/>
-                <path d="M0 240 Q105 220 210 225 Q315 230 420 215 L420 255 Q315 270 210 265 Q105 260 0 280Z" fill="#1a3a1e" opacity="0.4"/>
-                <!-- Garden bed -->
-                <ellipse cx="90" cy="180" rx="70" ry="35" fill="#1a4020" opacity="0.9"/>
-                <ellipse cx="330" cy="175" rx="65" ry="30" fill="#1a4020" opacity="0.9"/>
-                <!-- Flowers -->
-                <circle cx="70" cy="168" r="8" fill="#c8a96e" opacity="0.7"/>
-                <circle cx="95" cy="162" r="6" fill="#fff" opacity="0.5"/>
-                <circle cx="115" cy="170" r="7" fill="#c8a96e" opacity="0.6"/>
-                <circle cx="315" cy="165" r="8" fill="#fff" opacity="0.5"/>
-                <circle cx="340" cy="160" r="6" fill="#c8a96e" opacity="0.7"/>
-                <!-- Shrubs -->
-                <ellipse cx="200" cy="180" rx="25" ry="20" fill="#1e4024"/>
-                <ellipse cx="200" cy="165" rx="18" ry="15" fill="#254e2a"/>
-              </svg>
+              <img src="project-garden.jpg" alt="Hinsdale perennial garden design" style="width:100%;height:240px;object-fit:cover;display:block;" />
             </div>
             <div class="project-info">
               <span class="project-tag">Garden Design</span>
@@ -417,33 +244,7 @@
 
           <div class="project-card">
             <div class="project-img">
-              <svg viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <defs>
-                  <linearGradient id="p3bg" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#16281a"/>
-                    <stop offset="100%" stop-color="#0a1208"/>
-                  </linearGradient>
-                </defs>
-                <rect width="420" height="300" fill="url(#p3bg)"/>
-                <path d="M0 210 Q105 190 210 195 Q315 200 420 185 L420 300 L0 300Z" fill="#122016"/>
-                <!-- Retaining wall -->
-                <rect x="60" y="200" width="300" height="50" fill="#2a3828"/>
-                <line x1="60" y1="225" x2="360" y2="225" stroke="#3a4838" stroke-width="1"/>
-                <line x1="120" y1="200" x2="120" y2="250" stroke="#3a4838" stroke-width="1"/>
-                <line x1="180" y1="200" x2="180" y2="250" stroke="#3a4838" stroke-width="1"/>
-                <line x1="240" y1="200" x2="240" y2="250" stroke="#3a4838" stroke-width="1"/>
-                <line x1="300" y1="200" x2="300" y2="250" stroke="#3a4838" stroke-width="1"/>
-                <!-- Upper garden -->
-                <rect x="60" y="120" width="300" height="80" fill="#1a3820" opacity="0.8"/>
-                <!-- Plantings on wall -->
-                <ellipse cx="120" cy="195" rx="22" ry="18" fill="#1e4020"/>
-                <ellipse cx="210" cy="190" rx="28" ry="22" fill="#1e4020"/>
-                <ellipse cx="300" cy="195" rx="22" ry="18" fill="#1e4020"/>
-                <!-- Path steps -->
-                <rect x="185" y="248" width="50" height="12" rx="2" fill="#2a3828" opacity="0.9"/>
-                <rect x="185" y="263" width="50" height="12" rx="2" fill="#2a3828" opacity="0.9"/>
-                <rect x="185" y="278" width="50" height="12" rx="2" fill="#2a3828" opacity="0.9"/>
-              </svg>
+              <img src="project-wall.jpg" alt="Wheaton natural stone retaining wall" style="width:100%;height:240px;object-fit:cover;display:block;" />
             </div>
             <div class="project-info">
               <span class="project-tag">Hardscaping</span>
@@ -454,53 +255,7 @@
 
           <div class="project-card">
             <div class="project-img">
-              <svg viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <defs>
-                  <linearGradient id="p4bg" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#1a3020"/>
-                    <stop offset="100%" stop-color="#0d1a0d"/>
-                  </linearGradient>
-                </defs>
-                <rect width="420" height="300" fill="url(#p4bg)"/>
-                <path d="M0 220 Q105 200 210 205 Q315 210 420 195 L420 300 L0 300Z" fill="#152a18"/>
-                <!-- Night scene with lighting -->
-                <radialGradient id="light1" cx="105" cy="240" r="60" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.35"/>
-                  <stop offset="100%" stop-color="#c8a96e" stop-opacity="0"/>
-                </radialGradient>
-                <radialGradient id="light2" cx="210" cy="235" r="60" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.3"/>
-                  <stop offset="100%" stop-color="#c8a96e" stop-opacity="0"/>
-                </radialGradient>
-                <radialGradient id="light3" cx="315" cy="240" r="60" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.35"/>
-                  <stop offset="100%" stop-color="#c8a96e" stop-opacity="0"/>
-                </radialGradient>
-                <circle cx="105" cy="240" r="60" fill="url(#light1)"/>
-                <circle cx="210" cy="235" r="60" fill="url(#light2)"/>
-                <circle cx="315" cy="240" r="60" fill="url(#light3)"/>
-                <!-- Path -->
-                <path d="M155 300 L170 220 L250 220 L265 300Z" fill="#2a3828" opacity="0.7"/>
-                <!-- Light fixtures -->
-                <rect x="100" y="225" width="4" height="15" fill="#c8a96e" opacity="0.6"/>
-                <rect x="206" y="218" width="4" height="15" fill="#c8a96e" opacity="0.6"/>
-                <rect x="312" y="225" width="4" height="15" fill="#c8a96e" opacity="0.6"/>
-                <!-- Trees lit up -->
-                <rect x="58" y="140" width="6" height="100" fill="#0a1508"/>
-                <ellipse cx="61" cy="115" rx="40" ry="55" fill="#1a3a1e"/>
-                <radialGradient id="treeGlow" cx="61" cy="115" r="50" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.15"/>
-                  <stop offset="100%" stop-color="#c8a96e" stop-opacity="0"/>
-                </radialGradient>
-                <circle cx="61" cy="115" r="50" fill="url(#treeGlow)"/>
-                <rect x="356" y="148" width="6" height="92" fill="#0a1508"/>
-                <ellipse cx="359" cy="125" rx="40" ry="52" fill="#1a3a1e"/>
-                <radialGradient id="treeGlow2" cx="359" cy="125" r="50" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.15"/>
-                  <stop offset="100%" stop-color="#c8a96e" stop-opacity="0"/>
-                </radialGradient>
-                <circle cx="359" cy="125" r="50" fill="url(#treeGlow2)"/>
-              </svg>
+              <img src="project-lighting.jpg" alt="Downers Grove pathway lighting at dusk" style="width:100%;height:240px;object-fit:cover;display:block;" />
             </div>
             <div class="project-info">
               <span class="project-tag">Lighting</span>
