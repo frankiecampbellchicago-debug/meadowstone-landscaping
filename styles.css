@@ -412,6 +412,7 @@ p { max-width: 65ch; }
   inset: 0;
   z-index: 0;
   background: url('hero.jpg') center center / cover no-repeat;
+  filter: brightness(0.55);
 }
 
 .hero-content {
@@ -453,6 +454,16 @@ p { max-width: 65ch; }
   margin-bottom: 2.5rem;
   line-height: 1.65;
 }
+
+.hero-phone {
+  display: inline-block;
+  color: var(--gold-light);
+  font-size: 0.875rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+.hero-phone:hover { color: var(--white); }
 
 .hero-actions {
   display: flex;
@@ -859,7 +870,7 @@ cite span {
 .area-map svg { width: 100%; height: auto; border-radius: var(--radius-lg); }
 
 /* ── FAQ ──────────────────────────────────────────────────── */
-.section-faq { background: var(--off-white); }
+.section-faq { background: var(--stone); }
 .section-faq .section-header { max-width: 500px; }
 
 .faq-list {
