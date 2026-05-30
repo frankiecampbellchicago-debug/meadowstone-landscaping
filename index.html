@@ -333,39 +333,83 @@
             <p class="area-note">Not sure if we serve your area? Call us — we'll tell you honestly.</p>
           </div>
           <div class="area-map" aria-hidden="true">
-            <svg viewBox="0 0 400 380" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="mapBg" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#1e3a20"/>
-                  <stop offset="100%" stop-color="#152a18"/>
-                </linearGradient>
-              </defs>
-              <rect width="400" height="380" rx="8" fill="url(#mapBg)"/>
-              <!-- County outlines -->
-              <rect x="40" y="40" width="150" height="140" rx="4" fill="none" stroke="#3a5a3a" stroke-width="1.5" stroke-dasharray="4 3"/>
-              <rect x="210" y="40" width="150" height="140" rx="4" fill="none" stroke="#3a5a3a" stroke-width="1.5" stroke-dasharray="4 3"/>
-              <rect x="40" y="200" width="150" height="140" rx="4" fill="none" stroke="#3a5a3a" stroke-width="1.5" stroke-dasharray="4 3"/>
-              <!-- County labels -->
-              <text x="115" y="75" text-anchor="middle" fill="#6a8a6a" font-size="10" font-family="DM Sans, sans-serif" letter-spacing="1">DUPAGE</text>
-              <text x="285" y="75" text-anchor="middle" fill="#6a8a6a" font-size="10" font-family="DM Sans, sans-serif" letter-spacing="1">COOK</text>
-              <text x="115" y="235" text-anchor="middle" fill="#6a8a6a" font-size="10" font-family="DM Sans, sans-serif" letter-spacing="1">WILL</text>
-              <!-- Service zone fill -->
-              <rect x="40" y="40" width="150" height="140" rx="4" fill="#2a4a2a" opacity="0.3"/>
-              <rect x="40" y="200" width="150" height="140" rx="4" fill="#2a4a2a" opacity="0.3"/>
-              <rect x="210" y="40" width="150" height="140" rx="4" fill="#2a4a2a" opacity="0.2"/>
-              <!-- Location dots -->
-              <circle cx="100" cy="175" r="6" fill="#c8a96e"/>
-              <circle cx="100" cy="175" r="12" fill="#c8a96e" opacity="0.2"/>
-              <text x="115" y="178" fill="#c8a96e" font-size="9" font-family="DM Sans, sans-serif">Naperville HQ</text>
-              <circle cx="145" cy="130" r="4" fill="#6a8a6a"/>
-              <text x="155" y="133" fill="#8aaa8a" font-size="8" font-family="DM Sans, sans-serif">Wheaton</text>
-              <circle cx="75" cy="120" r="4" fill="#6a8a6a"/>
-              <text x="85" y="123" fill="#8aaa8a" font-size="8" font-family="DM Sans, sans-serif">Downers Grove</text>
-              <circle cx="260" cy="130" r="4" fill="#6a8a6a"/>
-              <text x="270" y="133" fill="#8aaa8a" font-size="8" font-family="DM Sans, sans-serif">Hinsdale</text>
-              <circle cx="90" cy="270" r="4" fill="#6a8a6a"/>
-              <text x="100" y="273" fill="#8aaa8a" font-size="8" font-family="DM Sans, sans-serif">Plainfield</text>
-            </svg>
+            <svg viewBox="0 0 440 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mapBg" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#1a3020"/>
+      <stop offset="100%" stop-color="#0d1a10"/>
+    </linearGradient>
+    <linearGradient id="duPageFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a5c30" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#1e4224" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="cookFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a5c30" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1e4224" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="willFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a5c30" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#1e4224" stop-opacity="0.28"/>
+    </linearGradient>
+    <radialGradient id="hqGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#c8a96e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="440" height="420" rx="10" fill="url(#mapBg)"/>
+  <line x1="220" y1="30" x2="220" y2="390" stroke="#2a4a2a" stroke-width="1" opacity="0.4"/>
+  <line x1="30" y1="210" x2="410" y2="210" stroke="#2a4a2a" stroke-width="1" opacity="0.4"/>
+  <path d="M38 42 L218 42 L218 208 L38 208 Z" fill="url(#duPageFill)"/>
+  <path d="M38 42 L218 42 L218 208 L38 208 Z" fill="none" stroke="#4a7a4a" stroke-width="1.5"/>
+  <line x1="38" y1="42" x2="218" y2="42" stroke="#6aaa6a" stroke-width="1" opacity="0.3"/>
+  <path d="M222 42 L402 42 L402 208 L222 208 Z" fill="url(#cookFill)"/>
+  <path d="M222 42 L402 42 L402 208 L222 208 Z" fill="none" stroke="#3a6a3a" stroke-width="1.5"/>
+  <path d="M38 212 L218 212 L218 388 L38 388 Z" fill="url(#willFill)"/>
+  <path d="M38 212 L218 212 L218 388 L38 388 Z" fill="none" stroke="#3a6a3a" stroke-width="1.5"/>
+  <text x="128" y="74" text-anchor="middle" fill="#8ac88a" font-size="9" font-family="DM Sans, sans-serif" font-weight="500" letter-spacing="2.5">DUPAGE COUNTY</text>
+  <line x1="78" y1="80" x2="178" y2="80" stroke="#4a7a4a" stroke-width="0.75" opacity="0.6"/>
+  <text x="128" y="94" text-anchor="middle" fill="#4a7a4a" font-size="8" font-family="DM Sans, sans-serif" letter-spacing="1">PRIMARY SERVICE AREA</text>
+  <text x="312" y="74" text-anchor="middle" fill="#6aaa6a" font-size="9" font-family="DM Sans, sans-serif" font-weight="500" letter-spacing="2.5">COOK COUNTY</text>
+  <line x1="262" y1="80" x2="362" y2="80" stroke="#3a6a3a" stroke-width="0.75" opacity="0.5"/>
+  <text x="312" y="94" text-anchor="middle" fill="#3a6a3a" font-size="8" font-family="DM Sans, sans-serif" letter-spacing="1">WESTERN SUBURBS</text>
+  <text x="128" y="250" text-anchor="middle" fill="#6aaa6a" font-size="9" font-family="DM Sans, sans-serif" font-weight="500" letter-spacing="2.5">WILL COUNTY</text>
+  <line x1="78" y1="256" x2="178" y2="256" stroke="#3a6a3a" stroke-width="0.75" opacity="0.5"/>
+  <text x="128" y="270" text-anchor="middle" fill="#3a6a3a" font-size="8" font-family="DM Sans, sans-serif" letter-spacing="1">NORTHERN CORRIDOR</text>
+  <g transform="translate(330, 300)" opacity="0.35">
+    <circle cx="0" cy="0" r="38" fill="none" stroke="#4a7a4a" stroke-width="1"/>
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#3a6a3a" stroke-width="0.75" stroke-dasharray="3 4"/>
+    <circle cx="0" cy="0" r="4" fill="#4a7a4a"/>
+    <line x1="0" y1="-38" x2="0" y2="38" stroke="#4a7a4a" stroke-width="0.75"/>
+    <line x1="-38" y1="0" x2="38" y2="0" stroke="#4a7a4a" stroke-width="0.75"/>
+    <polygon points="0,-38 -5,-22 0,-28 5,-22" fill="#6aaa6a" opacity="0.8"/>
+    <text x="0" y="-43" text-anchor="middle" fill="#6aaa6a" font-size="8" font-family="DM Sans, sans-serif" font-weight="500">N</text>
+  </g>
+  <circle cx="118" cy="188" r="18" fill="url(#hqGlow)"/>
+  <circle cx="118" cy="188" r="4" fill="#c8a96e"/>
+  <circle cx="118" cy="188" r="2" fill="#f0e6d0"/>
+  <rect x="130" y="178" width="78" height="22" rx="3" fill="#0d1a10" opacity="0.7"/>
+  <text x="169" y="192" text-anchor="middle" fill="#c8a96e" font-size="8.5" font-family="DM Sans, sans-serif" font-weight="500" letter-spacing="0.5">NAPERVILLE HQ</text>
+  <circle cx="152" cy="138" r="3.5" fill="#8aaa8a"/>
+  <text x="162" y="142" fill="#7a9a7a" font-size="7.5" font-family="DM Sans, sans-serif">Wheaton</text>
+  <circle cx="80" cy="155" r="3.5" fill="#8aaa8a"/>
+  <text x="90" y="159" fill="#7a9a7a" font-size="7.5" font-family="DM Sans, sans-serif">Downers Grove</text>
+  <circle cx="268" cy="145" r="3.5" fill="#8aaa8a"/>
+  <text x="278" y="149" fill="#7a9a7a" font-size="7.5" font-family="DM Sans, sans-serif">Hinsdale</text>
+  <circle cx="290" cy="108" r="3" fill="#6a8a6a"/>
+  <text x="298" y="112" fill="#6a8a6a" font-size="7" font-family="DM Sans, sans-serif">Elmhurst</text>
+  <circle cx="95" cy="318" r="3.5" fill="#8aaa8a"/>
+  <text x="105" y="322" fill="#7a9a7a" font-size="7.5" font-family="DM Sans, sans-serif">Plainfield</text>
+  <circle cx="148" cy="340" r="3" fill="#6a8a6a"/>
+  <text x="158" y="344" fill="#6a8a6a" font-size="7" font-family="DM Sans, sans-serif">Bolingbrook</text>
+  <rect x="230" y="225" width="162" height="58" rx="5" fill="#0d1a10" opacity="0.6"/>
+  <rect x="230" y="225" width="162" height="58" rx="5" fill="none" stroke="#3a5a3a" stroke-width="1"/>
+  <rect x="242" y="238" width="10" height="10" rx="2" fill="#2a5c30" opacity="0.8"/>
+  <text x="258" y="247" fill="#8aaa8a" font-size="8" font-family="DM Sans, sans-serif">Primary coverage</text>
+  <rect x="242" y="256" width="10" height="10" rx="2" fill="#1e4224" opacity="0.5"/>
+  <text x="258" y="265" fill="#6a8a6a" font-size="8" font-family="DM Sans, sans-serif">Extended coverage</text>
+  <line x1="38" y1="394" x2="402" y2="394" stroke="#c8a96e" stroke-width="1" opacity="0.2"/>
+  <text x="220" y="410" text-anchor="middle" fill="#4a6a4a" font-size="7.5" font-family="DM Sans, sans-serif" letter-spacing="1.5">CHICAGOLAND SERVICE TERRITORY</text>
+</svg>
           </div>
         </div>
       </div>
