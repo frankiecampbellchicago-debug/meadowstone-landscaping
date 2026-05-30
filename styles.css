@@ -1203,6 +1203,45 @@ textarea { resize: vertical; min-height: 110px; }
   .footer-nav { grid-template-columns: 1fr; }
 }
 
+/* ── MAP EMBED ────────────────────────────────────────────── */
+.map-embed-wrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--stone-border);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+}
+
+.map-embed-wrap iframe {
+  display: block;
+  width: 100%;
+  height: 420px;
+  border: 0;
+  filter: saturate(0.85) contrast(1.05);
+}
+
+.map-overlay-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(18,42,23,0.85), transparent);
+  padding: 1.5rem 1.25rem 1rem;
+  pointer-events: none;
+}
+
+.map-overlay-label span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
+}
+
+@media (max-width: 768px) {
+  .map-embed-wrap iframe { height: 300px; }
+}
+
 /* ── ANIMATIONS ───────────────────────────────────────────── */
 @media (prefers-reduced-motion: no-preference) {
   .fade-up {
